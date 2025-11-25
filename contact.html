@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Gabriel Luciano</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" />
+
+  <style>
+    :root{
+      --vermelho: #FA3419;
+      --bege: #F3E1B6;
+      --verde-suave: #7CBC9A;
+      --verde-petroleo: #23998E;
+      --azul-petroleo: #1D5E69;
+    }
+
+    body{
+      background:#f8f9fa;
+    }
+
+    .navbar{
+      background-color: var(--azul-petroleo) !important;
+    }
+
+    .navbar-brand,
+    .navbar .nav-link{
+      color:#fff !important;
+    }
+
+    .nav-pills{
+      background: rgba(255,255,255,0.15) !important;
+    }
+
+    .nav-pills .nav-link.active{
+      background:#fff !important;
+      color: var(--azul-petroleo) !important;
+    }
+
+    .btn-primary{
+      background-color: var(--verde-petroleo);
+      border-color: var(--verde-petroleo);
+    }
+
+    .btn-primary:hover{
+      background-color: var(--vermelho);
+      border-color: var(--vermelho);
+    }
+
+    .card{
+      border:none;
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    section{
+      background:#ffffff;
+    }
+
+    footer{
+      background: var(--azul-petroleo) !important;
+      color:white;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">Gabriel Luciano</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav nav-pills nav-fill gap-2 p-1 small rounded-5 shadow-sm ms-auto">
+          <li class="nav-item">
+            <a class="nav-link rounded-5" href="./home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link rounded-5" href="./profile.html">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active rounded-5" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-3" style="color:var(--azul-petroleo)">Entre em Contato</h2>
+      <p class="text-center text-muted mb-5">
+        Tem alguma ideia, projeto ou parceria? Me envie uma mensagem!
+      </p>
+
+      <div class="row g-5 align-items-center">
+
+        <div class="col-md-6">
+          <div class="card p-4">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Nome</label>
+                <input type="text" class="form-control" placeholder="Digite seu nome" required />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">E-mail</label>
+                <input type="email" class="form-control" placeholder="seuemail@email.com" required />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Mensagem</label>
+                <textarea class="form-control" rows="5" placeholder="Digite sua mensagem..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100">Enviar Mensagem</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card p-4 h-100">
+            <h5 class="fw-bold mb-3" style="color:var(--azul-petroleo)">Informações de Contato</h5>
+
+            <p><strong>Email:</strong> gabriel.lucianofmelo@gmail.com</p>
+            <p><strong>Telefone:</strong> (11) 99597-9671</p>
+            <p><strong>Localização:</strong> Brasil</p>
+
+            <hr>
+
+            <h6 class="fw-bold mb-2">Redes Sociais</h6>
+            <div class="d-flex gap-3">
+              <a href="https://www.instagram.com/luci4n0.m3lo?igsh=MTQzanFkZ2M2M2p4" class="btn btn-outline-primary btn-sm">Instagram</a>
+              <a href="https://github.com/GabrielLFM" class="btn btn-outline-dark btn-sm">GitHub</a>
+              <a href="https://www.linkedin.com/in/gabriel-luciano-679098381/" class="btn btn-outline-info btn-sm">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-3 text-center">
+    <p class="mb-0">© 2025 - Gabriel Luciano</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
